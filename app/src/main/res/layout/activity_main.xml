@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_image"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background"
+        android:alpha="0.2" />
+
+    <!-- Centered Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧠 EEG mood Predictor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/pickFileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📂 Select EEG CSV File"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_textview_bg"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prediction will appear here"
+            android:textColor="#000000"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_textview_bg"
+            android:elevation="2dp"
+            android:gravity="center" />
+    </LinearLayout>
+</FrameLayout>
