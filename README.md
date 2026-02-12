@@ -55,6 +55,6 @@ This Android app allows users to upload or input EEG signal data collected from 
 
 ## 👨‍💻 Developer
 
-**Sumeet Kamble**  
+**Raj Y Kangralkar**  
 Computer Science & AI Student  
 KLE Technological University
